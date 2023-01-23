@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta lang="en" />
+    <meta name="description" content="A form page where Dr. Earl Douglas National Park can get user information to provide a better service to the community.
+    This page will help us provide information about events and community gathering to the public." />
+
+    <meta name="author" content="Gerald Brown" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Earl Douglas National Park</title>
+
+    <!--Font Links Section-->
+    <link href="https://fonts.googleapis.com/css?family=Literata:400,500|Quicksand|Shojumaru&display=swap" rel="stylesheet">
+
+    <!-- CSS Links Section -->
+    <link rel="stylesheet" type="text/css" href="css/contactstyle.css">
+
+</head>
+
+<body>
+    <div id="pagewrapper">
+        <header>
+            <div class="span02">
+                <a href="index.html"><img src="images/thumb/logo-gerald.png" alt="Logo for Earl Douglas National Park" height="185px" /></a>
+            </div>
+            <!-- Hold your navagation -->
+            <div class="span10">
+                <nav>
+                    <div class="innernav">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="attractions.html">Attractions</a></li>
+                            <li><a href="multimedia.html">About</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <div class="reset"></div>
+            <h1>Create a New Account</h1>
+
+            <form method="post" action="form.php">
+                <!-- START ACCOUNT FIELDS -->
+                <fieldset class="span05">
+                    <h2 class="account center">Login Information</h2>
+                    <ul class="form">
+                        <li class="form">
+                            <label for="first_name">First Name:</label>
+                            <input type="text" id="first_name" name="first_name" class="large" />
+                        </li>
+                        <li class="form">
+                            <label for="last_name">Last Name:</label>
+                            <input type="text" id="last_name" name="last_name" class="large" />
+                        </li>
+                        <li class="form">
+                            <label for="email">Email:</label>
+                            <input type="text" id="email" name="email" class="large" />
+                        </li>
+                    </ul>
+                </fieldset>
+                <!-- END ACCOUNT -->
+                <div class="span01"><br></div>
+
+                <!-- START ADDRESS FIELDS -->
+                <fieldset class="span05 center">
+                    <h2 class="account">Address Information</h2>
+                    <ul class="form">
+                        <li class="form">
+                            <label for="street_address_1">Street Address 1:</label>
+                            <input type="text" id="street_address_1" name="street_addrss_1" class="large" />
+                        </li>
+                        <li class="form">
+                            <label for="city">City:</label>
+                            <input type="text" id="city" name="city" class="large" />
+                        </li>
+                        <li class="form">
+                            <label for="state">State:</label>
+                            <select type="text" id="state" name="state">
+                                        <option value=" ">Select a State or Territory</option>
+                                        <optgroup label="States">
+                                            <option>Select a State</option>
+                                            <option>Alabama</option>
+                                            <option>Alaska</option>
+                                            <option>Arizona</option>
+                                            <option>Arkansas</option>
+                                            <option>California</option>
+                                            <option>Colorada</option>
+                                            <option>Connecticut</option>
+                                            <option>Delaware</option>
+                                            <option>Florida</option>
+                                            <option>Georgia</option>
+                                            <option>Hawaii</option>
+                                            <option>Idaho</option>
+                                            <option>Illinois</option>
+                                            <option>Indiana</option>
+                                            <option>Iowa</option>
+                                            <option>Kansas</option>
+                                            <option>Kentucky</option>
+                                            <option>Louisiana</option>
+                                            <option>Maine</option>
+                                            <option>Maryland</option>
+                                            <option>Massachusetts</option>
+                                            <option>Michigan</option>
+                                            <option>Minnesota</option>
+                                            <option>Mississippi</option>
+                                            <option>Missouri</option>
+                                            <option>Montana</option>
+                                            <option>Nebraska</option>
+                                            <option>Nevada</option>
+                                            <option>New Hampshire</option>
+                                            <option>New Jersey</option>
+                                            <option>New Mexico</option>
+                                            <option>New York</option>
+                                            <option>North Carolina</option>
+                                            <option>North Dakota</option>
+                                            <option>Ohio</option>
+                                            <option>Oklahoma</option>
+                                            <option>Oregon</option>
+                                            <option>Pennsylvania</option>
+                                            <option>Rhode Island</option>
+                                            <option>South Carolina</option>
+                                            <option>South Dakota</option>
+                                            <option>Tennessee</option>
+                                            <option>Texas</option>
+                                            <option>Utah</option>
+                                            <option>Vermont</option>
+                                            <option>Virginia</option>
+                                            <option>Washington</option>
+                                            <option>West Virginia</option>
+                                            <option>Wisconsin</option>
+                                            <option>Wyoming</option>
+                                            <option></option>
+                                        </optgroup>
+                                        <optgroup label="Territories">
+                                            <option>American Samo</option>
+                                            <option>Guam</option>
+                                            <option>Northern Mariana Islands</option>
+                                            <option>Puerto Rico</option>
+                                            <option>U.S. Virgin Islands</option>
+                                        </optgroup>
+                                    </select>
+                        </li>
+                        <li class="form">
+                            <label for="zip_code">Zip Code:</label>
+                            <input type="text" id="zip_code" name="zip_code" class="small" />
+                        </li>
+                    </ul>
+                </fieldset>
+
+                <!-- END ADDRESS FIELDS -->
+                <div class="reset"><br></div>
+                <!-- START PROFILE FIELDS -->
+
+                <fieldset>
+                    <h2 class="public-profile">Profile Message</h2>
+                    <ul class="form">
+                        <li class="form">
+                            <label for="message">Message:</label>
+                            <textarea name="message" id="message" cols="50" rows="8"></textarea>
+                        </li>
+                    </ul>
+                </fieldset>
+                <!-- end public profile -->
+
+                <!-- START AUTHORIZATION FIELDS -->
+
+                <h2 class="authorization">Authorization to post your message online</h2>
+
+                <fieldset class="radios">
+
+                    <ul class="form">
+                        <li class="form">
+                            <input type="radio" id="authorization_yes" name="authorization" value="yes" />
+                            <label for="authorization_yes">Yes</label>
+                        </li>
+                        <li class="form">
+                            <input type="radio" id="authorization_no" name="authorization" value="no" />
+                            <label for="authorization_no">No</label>
+                        </li>
+                    </ul>
+
+                </fieldset>
+                <!-- end public profile -->
+
+                <!-- START EMAILS FIELDS -->
+
+                <fieldset>
+                    <h2 class="emails">Email Authorization</h2>
+                    <ul class="checkboxes">
+                        <li class="form">
+                            <input type="checkbox" id="email_ok_msg_about_events" name="email_signup[]" value="user_emails" />
+                            <label for="email_ok_msg_about_events">It is okay to email me with messages about special events.</label>
+                        </li>
+                        <li class="form">
+                            <input type="checkbox" id="email_ok_occasional_updates" name="email_signup[]" value="occasional_updates" />
+                            <label for="email_ok_occasional_updates">It is okay to email me with occasional promotions about our other products.</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <!-- end emails -->
+                <div class="span03"><br /></div>
+                <div class="span06 center">
+                    <input type="submit" class="create_profile" value="Create Account" />
+                    <input type="reset" class="create_profile" value="reset" />
+                </div>
+                <div class="span03"><br /></div>
+                <div class="reset"></div>
+            </form>
+        </main>
+        <div class="reset"></div>
+        <footer>
+            <div class="subnav">
+                <ul>
+                    <li><a href="contact.html">Contacts</a></li>
+                    <li><a href="#">Social</a></li>
+                    <li><a href="contact.html">Careers</a></li>
+                </ul>
+            </div>
+
+            <div class="span01"><br /></div>
+
+            <div class="span10">
+                <div id="message" class="center" Website was created to show skills in front end web development.></div>
+
+                <div class="span03 first-child"><br /></div>
+                <div class="span01"><br /></div>
+                <div class="span02"><a href="europabibliography.pdf" target="_blank">Your Bibliography</a></div>
+                <div class="span01"><br /></div>
+                <div class="span03 last-child"><br /></div>
+            </div>
+
+            <div class="span01"><br /></div>
+            <div class="reset"></div>
+        </footer>
+    </div>
+</body>
+
+</html>
