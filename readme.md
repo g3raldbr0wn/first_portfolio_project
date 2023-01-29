@@ -2,6 +2,8 @@
 This portfolio was built while I was attending NPower coding.
 
 **Link to project: http://geraldbrowndesign.tech
+![first_portfolio](https://user-images.githubusercontent.com/27866832/215332125-60b1250f-8acd-4bc4-bbad-abb9cc9bdd86.png)
+
 
 
 ## How It's Made:
